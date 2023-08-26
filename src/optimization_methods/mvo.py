@@ -1,5 +1,9 @@
 """
 this file implements the baseline MVO portfolio optimization problem as a quadratic programming problem
+min  x^T Q x
+s.t. e^T x = 1
+     sum x = 1
+     x >= 0
 """
 import numpy as np
 
@@ -18,7 +22,7 @@ class MVO:
         self.w = np.array([0] * np.shape(self.mu)[0])
         pass
 
-    def solve(self):
+    def solve(self, allow_short_sale=False):
         """
         this solves the baseline MVO problem
         :return: w, portfolio weights
