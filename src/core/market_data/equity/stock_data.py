@@ -15,15 +15,15 @@ def get_daily_prices(tickers: list,
     currently impl save the data locally and load from local file, only mimicking a backend
     TODO : may need to change this when there is a backend
     :param tickers: list of tickers
-    :param start_date:
-    :param end_date:
+    :param start_date: optional
+    :param end_date: optional
     :return: adjClose price from yfinance
     """
 
     check_tickers_validity(tickers)
 
     # two routines
-    # one is already has that prices file locally
+    # one already has that prices file locally
     # other is load from yfinance and save locally
     output = dict()
     for ticker in tickers:
@@ -40,6 +40,6 @@ def get_daily_prices(tickers: list,
 
 
 if __name__ == '__main__':
-    msft = get_daily_prices([])
+    #msft = get_daily_prices('msft')
     data = yf.download('msft')
-    print(type(data))
+

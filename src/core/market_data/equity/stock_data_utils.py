@@ -14,3 +14,9 @@ def check_tickers_validity(tickers):
     for s in tickers:
         if type(s) is not str:
             raise Exception("get_daily_prices:: ticker need to be of type str")
+
+def download_and_save_from_yf(ticker):
+    pass
+
+def load_from_local(ticker):
+    pass
