@@ -121,7 +121,8 @@ maturities = np.array([1/12,2/12,3/12,4/12,6/12,1,2,3,5,7,10,20,30])
 treasury_par_yield_daily_live = np.array([5.55, 5.56, 5.54, 5.48, 5.45, 5.27, 4.92, 4.67, 4.49, 4.51, 4.47, 4.79, 4.60]).astype(float)/100
 
 # fit curve using nelson siegel svensson method
-curve_fit, status = calibrate_nss_ols(maturities,treasury_par_yield_daily_live) 
+
+curve_fit, status = calibrate_nss_ols(maturities,treasury_par_yield_daily_live)
 
 # Compute r.f rate for all maturities
 df['rate'] = df['maturity'].apply(curve_fit)
