@@ -1,7 +1,7 @@
 import datetime
 
-from src.pricing.market_data_obj.equity_quote import OptionQuote
-from src.pricing.security.security_interface import Option
+from pricing.market_data_obj.equity_quote import OptionQuote
+from pricing.security.security_interface import Option
 
 
 class EquityOption(Option):

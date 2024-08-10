@@ -1,5 +1,9 @@
-from src.pricing.mc_simulator import MCSimulator
-from src.pricing.sto_vol_model import Heston
+from pricing.mc_simulator import MCSimulator
+from pricing.sto_vol_model import Heston
+
+
+class Calibrator:
+    pass
 
 
 def pricing_test(mkt_data):
