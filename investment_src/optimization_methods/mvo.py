@@ -1,9 +1,6 @@
 """
-this file implements the baseline MVO portfolio optimization problem as a quadratic programming problem
-min  x^T Q x
-s.t. e^T x = 1
-     sum x = 1
-     x >= 0
+this file implements various types of MVO portfolio optimization methods
+central models
 """
 import numpy as np
 from enum import Enum
@@ -11,10 +8,12 @@ from enum import Enum
 
 class MVOType(Enum):
     BASE = 0,
-    INTEGER = 1,
+    MAXRET = 1,
+    MIX = 2,
     MULTIPERIOD = 2,
     MAXSHARPE = 3,
-    CVAR = 4
+    CVAR = 4,
+    INTEGER = 5,
 
     def __str__(self):
         return self.name
