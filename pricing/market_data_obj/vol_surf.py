@@ -1,6 +1,4 @@
-from abc import ABC
-
-from src.pricing.market_data_obj.market_data_interface import MarketData
+from pricing.market_data_obj.market_data_interface import MarketData
 
 
 class VolSurface(MarketData):
