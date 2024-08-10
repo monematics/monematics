@@ -2,8 +2,8 @@ from abc import ABC, abstractmethod
 
 import pandas as pd
 
-from src.portfolio_basic.expected_return import *
-from src.portfolio_basic.correlation_matrix import *
+from investment_src.portfolio_basic.expected_return import *
+from investment_src.portfolio_basic.correlation_matrix import *
 
 
 class PortfolioImpl(ABC):

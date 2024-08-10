@@ -6,6 +6,18 @@ s.t. e^T x = 1
      x >= 0
 """
 import numpy as np
+from enum import Enum
+
+
+class MVOType(Enum):
+    BASE = 0,
+    INTEGER = 1,
+    MULTIPERIOD = 2,
+    MAXSHARPE = 3,
+    CVAR = 4
+
+    def __str__(self):
+        return self.name
 
 
 class MVO:
