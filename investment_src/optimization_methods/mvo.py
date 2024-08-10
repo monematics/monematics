@@ -10,10 +10,10 @@ class MVOType(Enum):
     BASE = 0,
     MAXRET = 1,
     MIX = 2,
-    MULTIPERIOD = 2,
-    MAXSHARPE = 3,
-    CVAR = 4,
-    INTEGER = 5,
+    MULTIPERIOD = 3,
+    MAXSHARPE = 4,
+    CVAR = 5,
+    INTEGER = 6
 
     def __str__(self):
         return self.name
