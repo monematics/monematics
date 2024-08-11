@@ -1,4 +1,4 @@
-from pricing.market_data_obj.market_data_interface import MarketData
+from pricing_src.market_data_obj.market_data_interface import MarketData
 
 
 class VolSurface(MarketData):

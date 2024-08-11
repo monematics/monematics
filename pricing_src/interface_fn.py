@@ -1,5 +1,5 @@
-from pricing.market_data_obj.market_data_interface import MarketData
-from pricing.security.security_interface import Security
+from pricing_src.market_data_obj.market_data_interface import MarketData
+from pricing_src.security.security_interface import Security
 
 
 def Ev(sec: Security, method: str, market_data: MarketData):

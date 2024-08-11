@@ -1,5 +1,5 @@
-from pricing.mc_simulator import MCSimulator
-from pricing.sto_vol_model import Heston
+from pricing_src.mc_simulator import MCSimulator
+from pricing_src.sto_vol_model import Heston
 
 
 class Calibrator:

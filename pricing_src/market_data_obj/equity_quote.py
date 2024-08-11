@@ -2,7 +2,7 @@
 market stock quote class
 TODO: might want to distinguish single name and indices, currently only single stock
 """
-from pricing.market_data_obj.market_data_interface import MarketData
+from pricing_src.market_data_obj.market_data_interface import MarketData
 
 
 class StockQuote(MarketData):
