@@ -1,8 +1,20 @@
 import datetime
-
+from enum import Enum
 from pricing_src.market_data_obj.market_data_interface import MarketData
 
 TODAY = datetime.date.today()
+
+
+class InterpolationScheme(Enum):
+    FLAT = 1
+    LINEAR = 2
+    CUBIC = 3
+    APQ2N = 4
+    APQ4N = 5
+
+
+class ExtrapolationScheme(Enum):
+    FLAT = 1
 
 
 class Curve(MarketData):
@@ -85,7 +97,6 @@ class Curve(MarketData):
         convert benchmark rates to a list of discount factor to interpolate
         :return:
         """
-
 
     def get_mkt_data_type(self):
         return "Curve"
