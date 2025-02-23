@@ -21,3 +21,9 @@ def CreateEquityOption(**kwargs):
     """
     # parse the input and create the equity option
     return
+
+def FitCurve(bmtenor, bmrates, interpolation_scheme):
+    """
+    Interface function to fit a discounting curve/projection curve
+    """
+    pass
